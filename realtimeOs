@@ -1,0 +1,24 @@
+Want to install RTOS in your device. Don't worry, here is the solution:
+
+1. Add this repositories manually to sudo gedit /etc/apt/sources.list file.
+	deb http://ppa.launchpad.net/abogani/realtime/ubuntu precise main
+	deb-src http://ppa.launchpad.net/abogani/realtime/ubuntu precise main
+2. Now run sudo apt-get update.
+
+3. Now you need to install real time os from the internet:
+
+	sudo apt-get install linux-realtime
+4. After it, just reboot your system, choose the real time kernal and enjoy!.
+
+If your grub does not show the RTOS just installed in the list of available kernals, then you need to use boot-repair.
+
+If you have only linux and it does not shows the kernal.
+
+You need to just edit /etc/default/grub and remove 0 from the 
+
+	GRUB_HIDDEN_TIMEOUT=0 <- remove O
+			||
+			\/	
+	GRUB_HIDDEN_TIMEOUT=
+
+Run sudo grub-update and reboot.
