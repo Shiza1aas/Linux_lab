@@ -1,13 +1,13 @@
 Want to install RTOS in your device. Don't worry, here is the solution:
 
-1. Add this repositories manually to /etc/apt/sources.list file. To do so
+1. Add these repositories manually to /etc/apt/sources.list file. To do so
 
   From command line enter 
   	sudo gedit /etc/apt/sources.list
   	
   And add these two lines at the end of the file
   
-	deb http://ppa.launchpad.net/abogani/realtime/ubuntu precise main
+	deb http://ppa.launchpad.net/abogani/realtime/ubuntu precise main 
 	deb-src http://ppa.launchpad.net/abogani/realtime/ubuntu precise main
 	
 2. Now run
